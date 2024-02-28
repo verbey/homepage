@@ -1,0 +1,33 @@
+:root {
+	--default-gap: 8px;
+}
+
+.aboutMeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--default-gap);
+}
+
+.workContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--default-gap);
+}
+
+.projectInfoContainer {
+	display: grid;
+	grid-template-rows: 1fr 1.5rem 4rem;
+	grid-template-columns: 1fr 32px 32px;
+	gap: var(--default-gap);
+}
+
+.contactMeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--default-gap);
+}
