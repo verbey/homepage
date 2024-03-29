@@ -1,5 +1,6 @@
 :root {
 	--default-gap: 8px;
+	--shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 .aboutMeContainer {
@@ -37,4 +38,8 @@
 .contactMePhoto {
 	width: 90vw;
 	object-fit: cover;
+}
+
+.projectContainer {
+	box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
 }
