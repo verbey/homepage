@@ -1,5 +1,5 @@
 :root {
-	--default-gap: 8px;
+	--default-spacing: 8px;
 	--shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -8,7 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: var(--default-gap);
+	gap: var(--default-spacing);
 }
 
 .workContainer {
@@ -16,22 +16,38 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: var(--default-gap);
+	gap: var(--default-spacing);
 }
 
 .projectInfoContainer {
 	display: grid;
-	grid-template-rows: 1fr 1.5rem 4rem;
-	grid-template-columns: 1fr 32px 32px;
-	gap: var(--default-gap);
+	grid-template-rows: 1.5rem 4rem;
+	grid-template-columns: 1fr 64px;
+	gap: var(--default-spacing);
+	padding: var(--default-spacing);
 }
 
-.contactMeContainer {
+.projectAbout {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.projectContainer {
+	box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
+	width: 380px;
+	height: 400px;
+	display: grid;
+	grid-template-rows: 240px 1fr;
+	gap: var(--default-spacing);
+}
+
+.projectLinks {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: var(--default-gap);
+}
+
+.projectName {
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 .aboutMePhoto,
@@ -40,6 +56,18 @@
 	object-fit: cover;
 }
 
-.projectContainer {
-	box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
+.contactMeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--default-spacing);
+}
+
+.projectContainer:nth-of-type(odd)>.projectScreenshot {
+	background: hotpink;
+}
+
+.projectContainer:nth-of-type(even)>.projectScreenshot {
+	background: aquamarine;
 }
