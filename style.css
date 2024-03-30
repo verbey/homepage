@@ -8,7 +8,7 @@
 #content {
 	display: flex;
 	flex-direction: column;
-	gap: var(--default-spacing);
+	gap: 8vh;
 }
 
 .aboutMeContainer {
@@ -64,14 +64,6 @@
 	object-fit: cover;
 }
 
-.contactMeContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: var(--default-spacing);
-}
-
 .projectContainer:nth-of-type(odd)>.projectScreenshot {
 	background: hotpink;
 }
@@ -91,4 +83,24 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 8vh 0;
+}
+
+.contactMeContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--default-spacing);
+	padding: var(--document-padding-width);
+	background: #0791B1;
+}
+
+.contactMeSocialsContainer {
+	display: flex;
+	gap: var(--default-spacing);
+}
+
+.contactMeSocialsContainer>img {
+	width: 32px;
+	height: auto;
 }
