@@ -1,6 +1,14 @@
 :root {
 	--default-spacing: 8px;
 	--shadow-color: rgba(0, 0, 0, 0.2);
+	--document-padding-width: 0 5vw;
+	--document-padding-height: 5vh 0;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--default-spacing);
 }
 
 .aboutMeContainer {
@@ -34,8 +42,8 @@
 
 .projectContainer {
 	box-shadow: 0 0.5rem 0.5rem var(--shadow-color);
-	width: 380px;
-	height: 400px;
+	width: 450px;
+	height: 500px;
 	display: grid;
 	grid-template-rows: 240px 1fr;
 	gap: var(--default-spacing);
@@ -70,4 +78,17 @@
 
 .projectContainer:nth-of-type(even)>.projectScreenshot {
 	background: aquamarine;
+}
+
+.workContainer {
+	display: grid;
+	grid-template-rows: 2rem 1fr;
+	padding: var(--document-padding-width);
+}
+
+.projectsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 8vh 0;
 }
