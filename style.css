@@ -148,3 +148,20 @@ header {
 .contactMePhoto {
 	width: 100vw;
 }
+
+@media (min-width: 800px) {
+	.contactMeContainer {
+		flex-direction: row;
+		padding: 5vh 5vw;
+	}
+
+	.contactMePhoto {
+		width: 45vw;
+		height: 500px;
+	}
+
+	.contactMeText {
+		padding: 0;
+		align-items: flex-start;
+	}
+}
