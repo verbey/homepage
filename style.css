@@ -62,11 +62,11 @@
 
 .aboutMePhoto,
 .contactMePhoto {
-	width: 90vw;
 	object-fit: cover;
 }
 
 .aboutMePhoto {
+	width: 90vw;
 	height: 600px;
 	z-index: 0;
 }
@@ -128,8 +128,16 @@ header {
 	align-items: center;
 	flex-direction: column;
 	gap: var(--default-spacing);
-	padding: var(--document-padding-width);
 	background: #0791B1;
+}
+
+.contactMeText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--default-spacing);
+	padding: var(--document-padding-width);
 }
 
 .contactMeSocialsContainer {
@@ -140,4 +148,8 @@ header {
 .contactMeSocialsContainer>img {
 	width: 32px;
 	height: auto;
+}
+
+.contactMePhoto {
+	width: 100vw;
 }
