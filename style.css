@@ -79,12 +79,7 @@
 	z-index: 1;
 	padding: var(--document-padding-width);
 	position: absolute;
-}
-
-.nameImageContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	top: calc(450px + 5vh);
 }
 
 header {
