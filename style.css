@@ -18,6 +18,7 @@
 	align-items: center;
 	flex-direction: column;
 	gap: var(--default-spacing);
+	padding: var(--document-padding-width);
 }
 
 .workContainer {
@@ -63,6 +64,32 @@
 .contactMePhoto {
 	width: 90vw;
 	object-fit: cover;
+}
+
+.aboutMePhoto {
+	height: 600px;
+	z-index: 0;
+}
+
+.aboutMeName {
+	font-size: min(4rem, 10vw);
+	font-weight: 500;
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.8) 3px 3px 6px;
+	z-index: 1;
+	padding: var(--document-padding-width);
+	position: absolute;
+}
+
+.nameImageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+header {
+	padding: var(--document-padding-height);
+	min-height: 600px;
 }
 
 .projectContainer:nth-of-type(odd)>.projectScreenshot {
