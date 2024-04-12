@@ -210,3 +210,16 @@ header {
 		height: 450px;
 	}
 }
+
+@media (min-width: 1600px) {
+	.aboutMePhoto {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	.aboutMeName {
+		top: 18rem;
+		left: 16px;
+		font-size: 2rem;
+	}
+}
