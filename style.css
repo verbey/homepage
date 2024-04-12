@@ -191,6 +191,14 @@ header {
 		min-height: 0;
 	}
 
+	.contactMeContainer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5vh 5vw;
+		color: #FFF;
+	}
+
 	.contactMePhoto {
 		width: 45vw;
 		height: 500px;
@@ -199,5 +207,6 @@ header {
 	.contactMeText {
 		padding: 0;
 		align-items: flex-start;
+		height: 450px;
 	}
 }
