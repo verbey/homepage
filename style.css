@@ -12,10 +12,10 @@
 	flex-direction: column;
 	gap: 8vh;
 	width: 100vw;
-}
-
-body {
+	/* position:absolute and specifying the overflow-x: hidden on #content is needed
+	because mobile browser ignore the overflow property on body and html elements */
 	overflow-x: hidden;
+	position: absolute;
 }
 
 .aboutMeContainer {
