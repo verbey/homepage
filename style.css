@@ -4,6 +4,7 @@
 	--document-padding-width: 0 5vw;
 	--document-padding-height: 5vh 0;
 	--big-text: 1.8rem;
+	--blue-background-color: #0791B1;
 }
 
 #content {
@@ -23,6 +24,15 @@
 
 .aboutMeTitle {
 	text-align: center;
+}
+
+.backgroundColor {
+	position: absolute;
+	z-index: -1;
+	background: var(--blue-background-color);
+	width: 200vw;
+	height: 60vh;
+	transform: translate(-40vh, -40vw) rotate(-10deg);
 }
 
 .workContainer {
@@ -127,7 +137,7 @@ header {
 	align-items: center;
 	flex-direction: column;
 	gap: var(--default-spacing);
-	background: #0791B1;
+	background: var(--blue-background-color);
 	color: #FFF;
 }
 
@@ -180,6 +190,7 @@ header {
 		margin-left: 10vmin;
 		text-wrap: wrap;
 		padding: 2vmin;
+		background: #FFF;
 	}
 
 	.aboutMeSpacer {
@@ -221,5 +232,9 @@ header {
 		top: 18rem;
 		left: 16px;
 		font-size: 2rem;
+	}
+
+	.backgroundColor {
+		height: 120vh;
 	}
 }
