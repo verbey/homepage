@@ -11,6 +11,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8vh;
+	width: 100vw;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 .aboutMeContainer {
@@ -237,4 +242,9 @@ header {
 	.backgroundColor {
 		height: 120vh;
 	}
+}
+
+.contactMeSocialsContainer>img:hover,
+.projectLinks>img:hover {
+	cursor: pointer;
 }
